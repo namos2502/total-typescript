@@ -1,6 +1,6 @@
-import { Expect, Equal } from "@total-typescript/helpers";
+import { Expect, Equal } from '@total-typescript/helpers';
 
-const setRange = (range: Array<number>) => {
+const setRange = (range: [number, number]) => {
   const x = range[0];
   const y = range[1];
 
@@ -16,7 +16,7 @@ const setRange = (range: Array<number>) => {
 setRange([0, 10]);
 
 // @ts-expect-error string is not assignable to number
-setRange([0, "10"]);
+setRange([0, '10']);
 
 // @ts-expect-error too few arguments
 setRange([0]);
